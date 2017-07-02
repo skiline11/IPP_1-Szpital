@@ -1,0 +1,20 @@
+Niestety nie posiadam oryginalnej treści zadania, gdyż nie zapisałem jej na komputerze, a nie jest już dostępna.
+
+W SKRÓCIE:
+Zadanie polegało na stworzeniu systemu informatycznego dla szpitala, który będzie przetrzymywał historię chorób swoich pacjentów.
+System powinien obsługiwać następujące komendy:
+1) NEW_DISEASE_ENTER_DESCRIPTION Nazwa_osoby Opis_choroby Może Się Składać z wielu słów
+  Polecenie to powinno dodać do historii chorób osoby o nazwie Nazwa_osoby(nazwa ta musi być jednym słowem), chorobę którą definiuje opis będący ciągiem znaków, znajdujący się po nazwie choroby.
+2) NEW_DISEASE_COPY_DESCRIPTION Nazwa_osoby_do_której_kopiujemy Nazwa_osoby_od_której_kopiujemy
+  Polecenie to powinno dodać (na sam koniec) do historii chorób pacjenta o nazwie Nazwa_osoby_do_której_kopiujemy, historię chób pacjenta o nazwie Nazwa_osoby_od_której_kopiujemy
+3) PRINT_DESCRIPTION Nazwa_osoby Liczba
+  Polecenie to powinno wypisać opis choroby z listy chorób pacjenta o nazwie Nazwa_osoby, której numer definiuje Liczba.
+4) CHANGE_DESCRIPTION Nazwa_osoby Numer_choroby Nowy opis choroby
+  Polecenie to powinno zmienić opis choroby o numerze Numer_choroby pacjenta o nazwie Nazwa_osoby na opis zdefiniowany ciągiem znaków po Numerze_choroby
+5) DELETE_PATIENT_DATA Nazwa_osoby
+  Polecenie to powinno usunąc historię chorób osoby o nazwie Nazwa_osoby, ale nie powinno usówać samej osoby z systemu.
+
+Jeśli polecenie przebiegnie pomyśnie i nie jest poleceniem PRINT_DESCRIPTION to powinien się wypisać na ekran komunikat "OK"
+Jeśli polecenia nie da się wykonać to powinien się wypisać na ekran komunikat "IGNORED"
+
+Należy pamiętać o zwalnianiu na bieżąco pamięci po wykonywaniu DELETE_PATIENT_DATA.
